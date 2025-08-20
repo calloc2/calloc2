@@ -2,7 +2,6 @@
 
 ```
 systems administrator / infrastructure analyst
-automating the real world
 ```
 
 **connect:** [portfolio](https://calloc2.github.io/calloc2)
