@@ -1,92 +1,591 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Yuri Takahashi - Sysadmin & IT Infrastructure</title>
+    <meta name="description" content="Portfolio profissional de Yuri Takahshi - Systems Administrator e Infraestrutura de TI especializado em automação, DevOps e infraestrutura escalável">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="navi.ico">
 </head>
 <body>
-    <!-- Hidden background music -->
-    <iframe 
-        src="https://www.youtube.com/embed/_W1P7AvV17w?autoplay=1&loop=1&controls=0&showinfo=0&rel=0&disablekb=1&fs=0&modestbranding=1&iv_load_policy=3&mute=0&start=0" 
-        style="position: fixed; top: -9999px; left: -9999px; width: 1px; height: 1px; visibility: hidden;"
-        allow="autoplay; encrypted-media"
-        allowfullscreen>
-    </iframe>
-    
-    <div class="container">
-        <header>
-            <h1>calloc2</h1>
-            <div class="subtitle">Systems Administrator / Infrastructure Analyst</div>
-        </header>
+    <nav class="navbar">
+        <div class="nav-container">
+            <!--
+            <div class="nav-logo">
+                <span class="logo-text">calloc2</span>
+            </div>
+            -->
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link" data-pt="Início" data-en="Home">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link" data-pt="Sobre" data-en="About">Sobre</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link" data-pt="Projetos" data-en="Projects">Projetos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link" data-pt="Habilidades" data-en="Skills">Habilidades</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link" data-pt="Contato" data-en="Contact">Contato</a>
+                </li>
+            </ul>
+            <div class="language-selector">
+                <button class="lang-btn active" data-lang="pt">PT</button>
+                <button class="lang-btn" data-lang="en">EN</button>
+            </div>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
 
-        <section class="section">
-            <h2>About</h2>
-            <p>Systems Administrator and Infrastructure Analyst specializing in automation, infrastructure management, and server optimization. Experience in building scalable systems, implementing CI/CD pipelines, and maintaining high-availability environments. Passionate about development, efficient processes, and cyberpunk.</p>
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="greeting" data-pt="Olá, eu sou" data-en="Hello, I'm">Olá, eu sou</span>
+                    <span class="highlight">Yuri Takahashi</span>
+                </h1>
+                <h2 class="hero-subtitle" data-pt="SysAdmin & Infraestrutura de TI" data-en="SysAdmin & IT Infrastructure">SysAdmin & Infraestrutura de TI</h2>
+                <p class="hero-description" data-pt="Especialista em automação, gerenciamento de infraestrutura e otimização de servidores. Experiência em construção de sistemas escaláveis, implementação de pipelines CI/CD e manutenção de ambientes de alta disponibilidade. Hobbysta de desenvolvimento de jogos." data-en="Specialist in automation, infrastructure management and server optimization. Experience in building scalable systems, implementing CI/CD pipelines and maintaining high-availability environments. Game development hobbyist.">
+                    Especialista em automação, gerenciamento de infraestrutura e otimização de servidores. 
+                    Experiência em construção de sistemas escaláveis, implementação de pipelines CI/CD 
+                    e manutenção de ambientes de alta disponibilidade. Hobbysta de desenvolvimento de jogos.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary" data-pt="Ver Projetos" data-en="View Projects">Ver Projetos</a>
+                    <a href="#contact" class="btn btn-secondary" data-pt="Entrar em Contato" data-en="Get in Touch">Entrar em Contato</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <main class="main-content">
+
+        <section id="about" class="section about-section">
+            <div class="section-header">
+                <h2 class="section-title" data-pt="Sobre Mim" data-en="About Me">Sobre Mim</h2>
+                <p class="section-subtitle" data-pt="Conheça minha trajetória profissional" data-en="Get to know my professional journey">Conheça minha trajetória profissional</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p data-pt="Sou um Systems Administrator e Infrastructure Analyst com foco em automação, gerenciamento de infraestrutura e otimização de servidores. Minha experiência abrange a construção de sistemas escaláveis, implementação de pipelines CI/CD e manutenção de ambientes de alta disponibilidade." data-en="I am a Systems Administrator and Infrastructure Analyst focused on automation, infrastructure management and server optimization. My experience covers building scalable systems, implementing CI/CD pipelines and maintaining high-availability environments.">
+                        Sou um Systems Administrator e Infrastructure Analyst com foco em automação, 
+                        gerenciamento de infraestrutura e otimização de servidores. Minha experiência 
+                        abrange a construção de sistemas escaláveis, implementação de pipelines CI/CD 
+                        e manutenção de ambientes de alta disponibilidade.
+                    </p>
+                    <p data-pt="Apaixonado por desenvolvimento, processos eficientes e inovação tecnológica. Sempre buscando soluções que otimizem operações e melhorem a experiência do usuário. Também sou hobbysta de desenvolvimento de jogos, explorando diferentes engines e tecnologias." data-en="Passionate about development, efficient processes and technological innovation. Always seeking solutions that optimize operations and improve user experience. I'm also a game development hobbyist, exploring different engines and technologies.">
+                        Apaixonado por desenvolvimento, processos eficientes e inovação tecnológica. 
+                        Sempre buscando soluções que otimizem operações e melhorem a experiência do usuário.
+                        Também sou hobbysta de desenvolvimento de jogos, explorando diferentes engines e tecnologias.
+                    </p>
+                </div>
+                <div class="about-highlights">
+                    <div class="highlight-item">
+                        <i class="fas fa-cogs"></i>
+                        <h4 data-pt="Automação" data-en="Automation">Automação</h4>
+                        <p data-pt="Especialista em automação de processos e workflows" data-en="Expert in process and workflow automation">Especialista em automação de processos e workflows</p>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fas fa-server"></i>
+                        <h4 data-pt="Infraestrutura" data-en="Infrastructure">Infraestrutura</h4>
+                        <p data-pt="Gerenciamento de servidores e ambientes de produção" data-en="Server and production environment management">Gerenciamento de servidores e ambientes de produção</p>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fas fa-chart-line"></i>
+                        <h4 data-pt="Otimização" data-en="Optimization">Otimização</h4>
+                        <p data-pt="Melhoria contínua de performance e eficiência" data-en="Continuous performance and efficiency improvement">Melhoria contínua de performance e eficiência</p>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fas fa-gamepad"></i>
+                        <h4 data-pt="Desenvolvimento de Jogos" data-en="Game Development">Game Development</h4>
+                        <p data-pt="Desenvolvimento de jogos como hobby e exploração de engines" data-en="Game development as hobby and engine exploration">Desenvolvimento de jogos como hobby e exploração de engines</p>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section class="section">
-            <h2>Projects</h2>
-            <div class="projects">
-                <div class="project">
-                    <h3>AutoAtas</h3>
-                    <p>Automation project for inserting plenary minutes data from the Transparency Portal into the Implanta Open Data system, placing the institution at the top of the TCU transparency ranking.</p>
-                    <div class="tech-stack">
-                        <span class="tech">Python</span>
-                        <span class="tech">Selenium</span>
+        <section id="projects" class="section projects-section">
+            <div class="section-header">
+                <h2 class="section-title" data-pt="Projetos" data-en="Projects">Projetos</h2>
+                <p class="section-subtitle" data-pt="Alguns dos meus trabalhos mais relevantes" data-en="Some of my most relevant works">Alguns dos meus trabalhos mais relevantes</p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image clickable-image" onclick="openImageModal('images/pmcicarus.png', 'PMC: Icarus')">
+                        <img src="images/pmcicarus.png" alt="PMC: Icarus" style="width: 100%; height: 100%; object-fit: cover;">
+                        <div class="image-overlay">
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">PMC: Icarus</h3>
+                        <p class="project-description" data-pt="Jogo/fork do CM-SS13 baseado no universo do filme Alien, onde se joga como fuzileiro colonial. Focado no público brasileiro com história própria, desenvolvido usando Dream Maker, HTML, SCSS, JavaScript, TypeScript e Python." data-en="Game/fork of CM-SS13 based on the Alien movie universe, where you play as a colonial marine. Focused on Brazilian audience with original story, developed using Dream Maker, HTML, SCSS, JavaScript, TypeScript and Python.">
+                            Jogo/fork do CM-SS13 baseado no universo do filme Alien, onde se joga como 
+                            fuzileiro colonial. Focado no público brasileiro com história própria, 
+                            desenvolvido usando Dream Maker, HTML, SCSS, JavaScript, TypeScript e Python.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Dream Maker</span>
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">SCSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">TypeScript</span>
+                            <span class="tech-tag">Python</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/calloc2/PMC-Icarus" class="project-link" target="_blank">
+                                <i class="fab fa-github"></i> <span data-pt="Código" data-en="Code">Código</span>
+                            </a>
+                            <a href="https://github.com/calloc2/PMC-Icarus" class="project-link" target="_blank">
+                                <i class="fas fa-external-link-alt"></i> <span data-pt="Demo" data-en="Demo">Demo</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">AutoAtas</h3>
+                        <p class="project-description" data-pt="Projeto de automação para inserção de dados de atas plenárias do Portal da Transparência no sistema Implanta Open Data, posicionando a instituição no topo do ranking de transparência do TCU." data-en="Automation project for inserting plenary minutes data from the Transparency Portal into the Implanta Open Data system, positioning the institution at the top of the TCU transparency ranking.">
+                            Projeto de automação para inserção de dados de atas plenárias do Portal da Transparência 
+                            no sistema Implanta Open Data, posicionando a instituição no topo do ranking de 
+                            transparência do TCU.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Selenium</span>
+                            <span class="tech-tag">Web Scraping</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/calloc2/AutoAtas" class="project-link" target="_blank">
+                                <i class="fab fa-github"></i> <span data-pt="Código" data-en="Code">Código</span>
+                            </a>
+                            <a href="https://github.com/calloc2/AutoAtas" class="project-link" target="_blank">
+                                <i class="fas fa-external-link-alt"></i> <span data-pt="Demo" data-en="Demo">Demo</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
                 
-                <div class="project">
-                    <h3>ReceitaCreaRequest</h3>
-                    <p>Automation project for automatically updating CREA-TO database data using the Federal Revenue API, ensuring greater accuracy and consistency of information, especially regarding company share capital, increasing annuity collection.</p>
-                    <div class="tech-stack">
-                        <span class="tech">Python</span>
-                        <span class="tech">PostgreSQL</span>
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">ReceitaCreaRequest</h3>
+                        <p class="project-description" data-pt="Projeto de automação para atualização automática de dados do banco CREA-TO utilizando a API da Receita Federal, garantindo maior precisão e consistência das informações, especialmente sobre capital social das empresas, aumentando a arrecadação de anuidades." data-en="Automation project for automatically updating CREA-TO database data using the Federal Revenue API, ensuring greater accuracy and consistency of information, especially regarding company share capital, increasing annuity collection.">
+                            Projeto de automação para atualização automática de dados do banco CREA-TO utilizando 
+                            a API da Receita Federal, garantindo maior precisão e consistência das informações, 
+                            especialmente sobre capital social das empresas, aumentando a arrecadação de anuidades.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                            <span class="tech-tag">API Integration</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/calloc2/receitaCreaRequest" class="project-link" target="_blank">
+                                <i class="fab fa-github"></i> <span data-pt="Código" data-en="Code">Código</span>
+                            </a>
+                            <a href="https://github.com/calloc2/receitaCreaRequest" class="project-link" target="_blank">
+                                <i class="fas fa-external-link-alt"></i> <span data-pt="Demo" data-en="Demo">Demo</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
                 
-                <div class="project">
-                    <h3>MicroSIP Call Filter</h3>
-                    <p>Automated MicroSIP log analysis in Python to generate call center operator metrics and CSV reports, enhancing efficiency tracking and managerial decisions for a 15-person support team.</p>
-                    <div class="tech-stack">
-                        <span class="tech">Python</span>
-                        <span class="tech">Flask</span>
+                <div class="project-card">
+                    <div class="project-image clickable-image" onclick="openImageModal('images/microsip.png', 'MicroSIP Call Filter')">
+                        <img src="images/microsip.png" alt="MicroSIP Call Filter" style="width: 100%; height: 100%; object-fit: cover;">
+                        <div class="image-overlay">
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">MicroSIP Call Filter</h3>
+                        <p class="project-description" data-pt="Análise automatizada de logs do MicroSIP em Python para geração de métricas de operadores de call center e relatórios CSV, aprimorando o acompanhamento de eficiência e decisões gerenciais." data-en="Automated MicroSIP log analysis in Python to generate call center operator metrics and CSV reports, enhancing efficiency tracking.">
+                            Análise automatizada de logs do MicroSIP em Python para geração de métricas de 
+                            operadores de call center e relatórios CSV, aprimorando o acompanhamento de 
+                            eficiência e decisões gerenciais.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Flask</span>
+                            <span class="tech-tag">Data Analysis</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/calloc2/MicroSIPFilter" class="project-link" target="_blank">
+                                <i class="fab fa-github"></i> <span data-pt="Código" data-en="Code">Código</span>
+                            </a>
+                            <a href="https://github.com/calloc2/MicroSIPFilter" class="project-link" target="_blank">
+                                <i class="fas fa-external-link-alt"></i> <span data-pt="Demo" data-en="Demo">Demo</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image clickable-image" onclick="openImageModal('images/protoCREA.png', 'ProtoCREA')">
+                        <img src="images/protoCREA.png" alt="ProtoCREA" style="width: 100%; height: 100%; object-fit: cover;">
+                        <div class="image-overlay">
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">ProtoCREA</h3>
+                        <p class="project-description" data-pt="Sistema de gerenciamento de protocolos do CREA-TO com funcionalidades completas de criação, edição e visualização de protocolos, sistema de usuários com diferentes níveis de permissão, busca e filtros avançados, e controle de status." data-en="CREA-TO protocol management system with complete functionality for creating, editing and viewing protocols, user system with different permission levels, advanced search and filters, and status control.">
+                            Sistema de gerenciamento de protocolos do CREA-TO com funcionalidades completas de 
+                            criação, edição e visualização de protocolos, sistema de usuários com diferentes 
+                            níveis de permissão, busca e filtros avançados, e controle de status.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Django</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                            <span class="tech-tag">Bootstrap</span>
+                            <span class="tech-tag">Python</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/calloc2/protoCREA" class="project-link" target="_blank">
+                                <i class="fab fa-github"></i> <span data-pt="Código" data-en="Code">Código</span>
+                            </a>
+                            <a href="https://github.com/calloc2/protoCREA" class="project-link" target="_blank">
+                                <i class="fas fa-external-link-alt"></i> <span data-pt="Demo" data-en="Demo">Demo</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">NormativosCREA</h3>
+                        <p class="project-description" data-pt="Sistema de consulta e gerenciamento de ementas e atos normativos do CREA-TO. Inclui busca por texto, filtros por tipo de ato normativo, situação e período, paginação avançada e upload de PDFs com estrutura organizada de arquivos." data-en="CREA-TO consultation and management system for summaries and normative acts. Includes text search, filters by type of normative act, situation and period, advanced pagination and PDF upload with organized file structure.">
+                            Sistema de consulta e gerenciamento de ementas e atos normativos do CREA-TO. 
+                            Inclui busca por texto, filtros por tipo de ato normativo, situação e período, 
+                            paginação avançada e upload de PDFs com estrutura organizada de arquivos.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Django</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                            <span class="tech-tag">Bootstrap</span>
+                            <span class="tech-tag">File Management</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/calloc2/normativosCREA" class="project-link" target="_blank">
+                                <i class="fab fa-github"></i> <span data-pt="Código" data-en="Code">Código</span>
+                            </a>
+                            <a href="https://github.com/calloc2/normativosCREA" class="project-link" target="_blank">
+                                <i class="fas fa-external-link-alt"></i> <span data-pt="Demo" data-en="Demo">Demo</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="section">
-            <h2>Skills</h2>
-            <div class="skills">
-                <div class="skill">
-                    <h4>Sysadmin</h4>
-                    <p>Active Directory, LDAP, SSH, VMware vSphere, Hyper-V, VPN (Aker, OpenVPN), Firewalls, Network Security, Server Management, User Provisioning</p>
+        <section id="skills" class="section skills-section">
+            <div class="section-header">
+                <h2 class="section-title" data-pt="Habilidades" data-en="Skills">Habilidades</h2>
+                <p class="section-subtitle" data-pt="Tecnologias e ferramentas que domino" data-en="Technologies and tools I master">Tecnologias e ferramentas que domino</p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <div class="skill-header">
+                        <i class="fas fa-server"></i>
+                        <h3 data-pt="Sysadmin" data-en="Sysadmin">Sysadmin</h3>
+                    </div>
+                    <div class="skill-items">
+                        <span class="skill-item">Active Directory</span>
+                        <span class="skill-item">LDAP</span>
+                        <span class="skill-item">SSH</span>
+                        <span class="skill-item">VMware vSphere</span>
+                        <span class="skill-item">Hyper-V</span>
+                        <span class="skill-item">VPN (Aker, OpenVPN)</span>
+                        <span class="skill-item">Firewalls</span>
+                        <span class="skill-item">Network Security</span>
+                        <span class="skill-item">Server Management</span>
+                        <span class="skill-item">User Provisioning</span>
+                    </div>
                 </div>
-                <div class="skill">
-                    <h4>Development</h4>
-                    <p>Shellscript, Python, Django</p>
+                
+                <div class="skill-category">
+                    <div class="skill-header">
+                        <i class="fas fa-code"></i>
+                        <h3 data-pt="Desenvolvimento" data-en="Development">Desenvolvimento</h3>
+                    </div>
+                    <div class="skill-items">
+                        <span class="skill-item">Shellscript</span>
+                        <span class="skill-item">Python</span>
+                        <span class="skill-item">Django</span>
+                        <span class="skill-item">Flask</span>
+                        <span class="skill-item">Web Scraping</span>
+                        <span class="skill-item">API Integration</span>
+                    </div>
                 </div>
-                <div class="skill">
-                    <h4>Automation & DevOps</h4>
-                    <p>Docker, Git, Jenkins, GitHub Actions, CI/CD</p>
+                
+                <div class="skill-category">
+                    <div class="skill-header">
+                        <i class="fas fa-cogs"></i>
+                        <h3 data-pt="Automação & DevOps" data-en="Automation & DevOps">Automação & DevOps</h3>
+                    </div>
+                    <div class="skill-items">
+                        <span class="skill-item">Docker</span>
+                        <span class="skill-item">Git</span>
+                        <span class="skill-item">Jenkins</span>
+                        <span class="skill-item">GitHub Actions</span>
+                        <span class="skill-item">CI/CD</span>
+                    </div>
                 </div>
-                <div class="skill">
-                    <h4>Tools & Platforms</h4>
-                    <p>PowerBI, VMware, Docker, Git, MySQL, PostgreSQL, Linux, Windows Server</p>
+                
+                <div class="skill-category">
+                    <div class="skill-header">
+                        <i class="fas fa-tools"></i>
+                        <h3 data-pt="Ferramentas & Plataformas" data-en="Tools & Platforms">Ferramentas & Plataformas</h3>
+                    </div>
+                    <div class="skill-items">
+                        <span class="skill-item">PowerBI</span>
+                        <span class="skill-item">VMware & VirtualBox</span>
+                        <span class="skill-item">MySQL</span>
+                        <span class="skill-item">PostgreSQL</span>
+                        <span class="skill-item">Linux</span>
+                        <span class="skill-item">Windows Server</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="skill-header">
+                        <i class="fas fa-gamepad"></i>
+                        <h3 data-pt="Desenvolvimento de Jogos" data-en="Game Development">Game Development</h3>
+                    </div>
+                    <div class="skill-items">
+                        <span class="skill-item">Godot</span>
+                        <span class="skill-item">C#</span>
+                        <span class="skill-item">DreamMaker</span>
+
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section class="section contact">
-            <h2>Contact</h2>
-            <p>Let's connect and work together</p>
-            <div style="margin-top: 20px;">
-                <a href="https://github.com/calloc2" target="_blank">GitHub</a>
+        <section id="contact" class="section contact-section">
+            <div class="section-header">
+                <h2 class="section-title" data-pt="Entre em Contato" data-en="Get in Touch">Entre em Contato</h2>
+                <p class="section-subtitle" data-pt="Vamos trabalhar juntos!" data-en="Let's work together!">Vamos trabalhar juntos!</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fab fa-github"></i>
+                        <div class="contact-details">
+                            <h4>GitHub</h4>
+                            <p data-pt="Veja meus projetos e contribuições" data-en="See my projects and contributions">Veja meus projetos e contribuições</p>
+                            <a href="https://github.com/calloc2" target="_blank" class="contact-link">github.com/calloc2</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <p data-pt="Entre em contato diretamente" data-en="Contact me directly">Entre em contato diretamente</p>
+                            <a href="mailto:yuribtakahashi@yahoo.com" class="contact-link">yuribtakahashi@yahoo.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-linkedin"></i>
+                        <div class="contact-details">
+                            <h4>LinkedIn</h4>
+                            <p data-pt="Conecte-se profissionalmente" data-en="Connect professionally">Conecte-se profissionalmente</p>
+                            <a href="https://linkedin.com/in/ytksh" target="_blank" class="contact-link">linkedin.com/in/ytksh</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-cta">
+                    <h3 data-pt="Pronto para começar um projeto?" data-en="Ready to start a project?">Pronto para começar um projeto?</h3>
+                    <p data-pt="Estou sempre interessado em novos desafios e oportunidades de colaboração." data-en="I'm always interested in new challenges and collaboration opportunities.">Estou sempre interessado em novos desafios e oportunidades de colaboração.</p>
+                    <a href="mailto:yuribtakahashi@yahoo.com" class="btn btn-primary" data-pt="Enviar Mensagem" data-en="Send Message">Enviar Mensagem</a>
+                </div>
             </div>
         </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p data-pt="&copy; 2025 Yuri Takahashi. Todos os direitos reservados." data-en="&copy; 2025 Yuri Takahashi. All rights reserved.">&copy; 2025 Yuri Takahashi. Todos os direitos reservados.</p>
+            <div class="footer-links">
+                <a href="#home" data-pt="Início" data-en="Home">Início</a>
+                <a href="#about" data-pt="Sobre" data-en="About">Sobre</a>
+                <a href="#projects" data-pt="Projetos" data-en="Projects">Projetos</a>
+                <a href="#contact" data-pt="Contato" data-en="Contact">Contato</a>
+            </div>
     </div>
+    </footer>
+
+    <!-- Image Modal -->
+    <div id="imageModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeImageModal()">&times;</span>
+            <img id="modalImage" src="" alt="">
+            <div class="modal-caption" id="modalCaption"></div>
+        </div>
+    </div>
+
+    <script>
+        // Mobile menu toggle
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.nav-link').forEach(n => n.addEventListener('click', () => {
+            hamburger.classList.remove('active');
+            navMenu.classList.remove('active');
+        }));
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Navbar background on scroll
+        window.addEventListener('scroll', () => {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 100) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        const langButtons = document.querySelectorAll('.lang-btn');
+        const elementsToTranslate = document.querySelectorAll('[data-pt]');
+
+        langButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                langButtons.forEach(btn => btn.classList.remove('active'));
+                button.classList.add('active');
+                
+                const selectedLang = button.getAttribute('data-lang');
+                
+                elementsToTranslate.forEach(element => {
+                    const translation = element.getAttribute(`data-${selectedLang}`);
+                    if (translation) {
+                        // Handle special cases for elements with HTML content
+                        if (element.innerHTML.includes('<span')) {
+                            // For elements with nested spans, update the span content
+                            const span = element.querySelector('span[data-pt]');
+                            if (span) {
+                                const spanTranslation = span.getAttribute(`data-${selectedLang}`);
+                                if (spanTranslation) {
+                                    span.textContent = spanTranslation;
+                                }
+                            }
+                        } else {
+                            element.textContent = translation;
+                        }
+                    }
+                });
+            });
+        });
+
+        // Image Modal Functions
+        function openImageModal(imageSrc, caption) {
+            const modal = document.getElementById('imageModal');
+            const modalImg = document.getElementById('modalImage');
+            const modalCaption = document.getElementById('modalCaption');
+            
+            modal.style.display = 'block';
+            modalImg.src = imageSrc;
+            modalCaption.textContent = caption;
+        }
+
+        function closeImageModal() {
+            const modal = document.getElementById('imageModal');
+            modal.style.display = 'none';
+        }
+
+        // Close modal when clicking outside the image
+        window.onclick = function(event) {
+            const modal = document.getElementById('imageModal');
+            if (event.target === modal) {
+                modal.style.display = 'none';
+            }
+        }
+
+        // Close modal with Escape key
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape') {
+                closeImageModal();
+            }
+        });
+
+        // Name switching effect for hero only
+        function createNameSwitchEffect(element) {
+            const names = ['calloc2', 'Yuri Takahashi'];
+            let currentIndex = 1; // Start with Yuri Takahashi
+            
+            setInterval(() => {
+                if (Math.random() < 0.25) { // 25% chance of switching
+                    // Add flicker effect during switch
+                    element.classList.add('switching');
+                    
+                    setTimeout(() => {
+                        currentIndex = (currentIndex + 1) % names.length;
+                        element.textContent = names[currentIndex];
+                        element.classList.remove('switching');
+                    }, 250); // Half of the flicker duration
+                    
+                    // Switch back after a random time (3-8 seconds)
+                    setTimeout(() => {
+                        element.classList.add('switching');
+                        setTimeout(() => {
+                            currentIndex = (currentIndex + 1) % names.length;
+                            element.textContent = names[currentIndex];
+                            element.classList.remove('switching');
+                        }, 250);
+                    }, 3000 + Math.random() * 5000);
+                }
+            }, 5000 + Math.random() * 10000); // Check every 5-15 seconds
+        }
+
+        // Apply name switching effect to hero only
+        document.addEventListener('DOMContentLoaded', function() {
+            const highlightName = document.querySelector('.highlight');
+            
+            if (highlightName) {
+                createNameSwitchEffect(highlightName);
+            }
+        });
+    </script>
 </body>
 </html>
